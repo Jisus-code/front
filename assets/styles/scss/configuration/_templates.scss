@@ -1,0 +1,18 @@
+span {
+
+  &.active {
+    color: map-get($colors, active);
+  }
+
+  &.double {
+    opacity: 60%;
+  }
+
+  &.space {
+    margin: 0 7px;
+  }
+
+  &.auto {
+    margin-left: 70px;
+  }
+}

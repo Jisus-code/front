@@ -1,0 +1,46 @@
+.loader-main {
+  display: flex; align-items: flex-start; flex-direction: column;
+  width: 100%; height: 100vh;
+  user-select: none;
+  padding: 40px;
+
+  & > div {
+    width: 600px; height: max-content;
+  }
+
+  &__company-information {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  &__personal-information {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  &__process-loader {
+    margin-bottom: auto;
+  }
+
+  &__container {
+    display: flex; flex-direction: column;
+    margin-top: 20px; padding-left:20px; 
+    width: 470px; height: 190px;
+    overflow: scroll;
+    pointer-events: none;
+
+    scrollbar-width: none;
+
+    & > span {
+      display: flex; align-items: center; justify-content: space-between;
+      width: 100%; height: max-content;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+  }
+
+  &__computer-info {
+    font-size: 16px;
+  }
+
+}

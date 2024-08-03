@@ -1,0 +1,31 @@
+@keyframes cursor {
+  0% {
+    transform: translate( -22px, -22px ) scale( 1 ) rotate( 360deg );
+  } 
+  
+  100% {
+    transform: translate( -22px, -22px ) scale( 1 ) rotate( 0deg );
+  }
+}
+
+@keyframes cursor-scale {
+  0% {
+    transform: translate( -22px, -22px ) scale( 1.1 );
+  } 
+  
+  100% {
+    transform: translate( -22px, -22px ) scale( 1.2 );
+  }
+}
+
+@keyframes render-nav {
+  0% {
+    transform: translateY( -100% );
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY( 0% );
+    opacity: 1;
+  }
+}

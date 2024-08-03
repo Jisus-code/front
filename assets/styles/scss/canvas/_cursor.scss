@@ -1,0 +1,51 @@
+.cursor {
+  filter: drop-shadow(0 0 1rem #e8e8e896);
+  position: fixed; top: 0; left: 0;
+  width: 5px; height: 5px;
+  background: #e8e8e896;
+  pointer-events: none;
+  border-radius: 100%;
+  user-select: none;
+  display: none;
+
+  &_move {
+    display: block;
+  }
+
+  &_active, &_error, &_success {
+    width: 5px; height: 5px;
+    border: none;
+  }
+
+  &::before {
+    filter: drop-shadow(0 0 1rem #e8e8e896);
+    transform: translate( -22px, -22px ) scale( 1 );
+    animation: cursor 5s linear infinite;
+    position: absolute; top: 0; left: 0;
+    border: 2px dashed #e8e8e85f;
+    width: 50px; height: 50px;
+    background: transparent;
+    border-radius: 100%;
+    content: '';
+  }
+
+  &_active {
+    filter: drop-shadow(0 0 1rem #ffaa00);
+    background: #ffaa00;
+
+    &::before {
+      animation: cursor-scale 0.3s ease-in forwards;
+      border-color: #ffaa00;
+    }
+  }
+
+  &_error {
+    filter: drop-shadow(0 0 1rem red);
+    background: red;
+  }
+
+  &_success {
+    filter: drop-shadow(0 0 1rem green);
+    background: green;
+  }
+}

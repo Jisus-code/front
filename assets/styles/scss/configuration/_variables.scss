@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+$colors: (
+  back: #111111,
+  font: #e8e8e8,
+  active: #ffaa00,
+);
+
+$size: (
+  cur-product-h: 500px,
+  product-h: 300px,
+  header-h: 90px,
+  card-h: 500px,
+);
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
